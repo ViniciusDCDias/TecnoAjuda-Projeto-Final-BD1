@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Site Base{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body>
+    <header>
+        <h1><i>TecnoAjuda</i></h1>
+        <h3><i>Sistema para </i></h3>
+    </header>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('criarUser') }}">Criar Usuário</a>
+        <a href="{{ url_for('loginUser') }}">Login</a>
+        <a href="{{ url_for('pedidos') }}">Pedidos</a>
+        <a href="{ {url_for('contatos') }}">Contato</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer id="contato">
+        <p>Suporte Técnico - Todos os direitos reservados</p>
+    </footer>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
