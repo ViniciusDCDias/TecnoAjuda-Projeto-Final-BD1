@@ -27,13 +27,13 @@ nav{
         background-color: #090a31;
         padding: 10px;
         gap: 30px;
-        width: 100%;
+        width: screen;
 }
 
 nav a{
         text-align: center;
         background: rgba(2, 2, 2, 0);
-        padding: .9rem;
+        padding: .9rem 0;
         border-radius: 10px;
         transition: .3s;
         width: 100%;
