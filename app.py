@@ -20,7 +20,7 @@ def loginUser():
 
 @app.route("/contatos")
 def contatos():
-    return render_template("contatos.html")
+    return render_template("contato.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
