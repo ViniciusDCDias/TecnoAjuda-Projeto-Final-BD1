@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
 {% block title %}Login - TecnoAjuda{% endblock %}
 
 {% block content%}
@@ -8,15 +12,14 @@
         <form action="" method="post">
         <fieldset>
             <div class="Nome_email_senha">
-            <label for="email">Digite seu e-mail:</label>
+            <label for="email">Digite seu e-mail:</label><br>
             <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
             </div>
-
             <div class="Nome_email_senha">
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" maxlength="10" placeholder="••••••">
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" maxlength="10" placeholder="Digite sua Senha">
             </div>
-
+            <br>
             <div class="button-group">
             <input type="submit" value="Enviar" class="botao btn-enviar">
             <input type="reset" value="Resetar" class="botao btn-reset">

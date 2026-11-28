@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+{% endblock %}
+
+{% block title %}Inicio - TecnoAjuda{% endblock %}
+
 {% block content %}
         <h2><i>Bem-vindo ao nosso site!</i></h2>
         <p>Nosso site foi desenvolvido para ajudar pessoas que enfrentam problemas técnicos com computadores, celulares, programas e outros equipamentos tecnológicos.</p>
