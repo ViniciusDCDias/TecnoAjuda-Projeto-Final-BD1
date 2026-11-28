@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Contatos - TecnoAjuda{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contatos.css') }}">
+
+<div class="contatos-container">
+    <h1>Contatos</h1>
+    <p class="subtitulo">Entre em contato com nossa equipe ou acesse o repositório oficial do projeto.</p>
+
+    <div class="lista-contatos">
+        <div class="item-contato">
+            <span class="label">E-mail:</span>
+            <div class="lista-emails">
+                <a href="mailto:guimarsamuel@gmail.com">guimarsamuel@gmail.com</a>
+                <a href="mailto:math.ag.nasc@gmail.com">math.ag.nasc@gmail.com</a>
+                <a href="mailto:duarte@gmail.com">duarte@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="item-contato">
+            <span class="label">GitHub:</span>
+            <a href="https://github.com/ViniciusDCDias/TecnoAjuda-Projeto-Final-BD1" target="_blank" rel="noopener noreferrer">
+                ViniciusDCDias/TecnoAjuda-Projeto-Final-BD1
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
