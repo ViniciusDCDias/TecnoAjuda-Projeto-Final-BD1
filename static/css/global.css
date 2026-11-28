@@ -1,65 +1,102 @@
-body {
-font-family: Arial, sans-serif;
-background-color: #3a90d1;
-margin: 0;
-        }
+*{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        color: #fee;
+}
 
-header {
-background-color:  #3a90d1;
-color: white;
-text-align: center;
-padding: 25px;
-        }
+body{
+        font-family: "Lato",sans-serif;
+        background:linear-gradient(#000000,#242424) no-repeat;
+        font-weight: 400;
+}
 
-nav {background-color: #2f638b;
-padding: 15px;
-text-align: center;
- font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;       }
+header{
+        font-family: 'Oswald',sans-serif;
+        background-color: #090a31;
+        justify-items: center;
+        align-content: center;
+        padding: 2rem;
+}
 
-nav a {
-color: aliceblue;
-text-decoration: none;
-margin: 10px;
-font-size: 16px;
-        }
+nav{
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #090a31;
+        padding: 10px;
+        gap: 30px;
+        width: 100%;
+}
 
-nav a:hover {
-color: #a8d8ff;
-        }
+nav a{
+        text-align: center;
+        background: rgba(2, 2, 2, 0);
+        padding: .9rem;
+        border-radius: 10px;
+        transition: .3s;
+        width: 100%;
+}
 
-main {
-background-color: white;
-margin: 30px auto;
-padding: 25px;
-width: 80%; 
-border-radius: 10px;
-font-family: 'Times New Roman', Times, serif;
-        }
-
-h2 {
-color: #1e3a5f;
- font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;       
-        }
-
-p {
-font-size: 16px;
-line-height: 1.6;
-        }
+nav a:hover{
+        transform: scale(1.01);
+        background-color: rgba(2, 2, 2, 0.747);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
 
 footer {
-background-color: #3a5781;
-color: white;
-text-align: center;
-padding: 15px;
-margin-top: 40px;
-        }
+        background-color: #090a31;
+        color: #eee;
+        padding: 35px 8% 15px;
+        font-family: "Lato", sans-serif;
+}
 
-    h1{
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size:xx-large;
-color: aliceblue;
-    }
+.footer-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+}
 
-  h3{
-color: aliceblue;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  }
+.footer-section {
+        flex: 1;
+        min-width: 200px;
+}
+
+.footer-section h3 {
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 12px;
+        font-size: 20px;
+}
+
+.footer-section p {
+        margin-bottom: 8px;
+        color: #c5c5c5;
+}
+
+.footer-section a {
+        display: inline-block;
+        margin-top: 8px;
+        color: #a78bfa;
+        text-decoration: none;
+        transition: 0.3s;
+}
+
+.footer-section a:hover {
+        color: #fff;
+        text-decoration: underline;
+}
+
+.footer-bottom {
+        border-top: 1px solid #44365f;
+        padding-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #aaa;
+}
+
+.footer-bottom p {
+        margin-bottom: 5px;
+}

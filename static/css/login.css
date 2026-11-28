@@ -1,0 +1,54 @@
+main{
+    padding: 20px;
+}
+
+.formulario_total{
+    justify-items: center;
+    align-content: right;
+    padding: 3rem 20rem;
+    background-color: #fddbb1;
+    border-radius: 20px;
+}
+
+h2{
+    color: #222;
+}
+
+form{
+    padding: 10px;
+}
+
+fieldset{
+    padding: 10px;
+    border: none;
+}
+
+fieldset div{
+    padding: 10px;
+}
+
+div input{
+    width: 150%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(66, 66, 66, 0.315);
+    transition: .3s;
+}
+
+div input:hover{
+    transform: scale(1.05);
+}
+
+div input[type="submit"],div input[type="reset"]{
+    margin: 1px 10px;
+    background-color: #0e0e35;
+}
+div input[type="submit"]:hover,
+div input[type="reset"]:hover {
+    transform: scale(1.1);
+}
+
+div label{
+    color: #222;
+}

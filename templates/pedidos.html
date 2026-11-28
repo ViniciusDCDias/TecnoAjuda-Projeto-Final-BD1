@@ -1,1 +1,29 @@
 {% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/pedidos.css') }}">
+{% endblock %}
+
+{% block title %}Pedidos de Sistema - TecnoAjuda{% endblock %}
+
+{% block content %}
+<main>
+    <div class="content">
+        <div id="nav">
+            <div class="busca fa-solid fa-search">
+                <input type="text" name="buscar" id="buscar" placeholder="buscar">
+            </div>
+            <div class="criar">
+                <div class="fa-solid fa-plus"></div>
+                <p>Adicionar Pedido</p>
+            </div>
+        </div>
+        <div id="pedidos">
+            <p>Carregando Pedidos...</p>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://kit.fontawesome.com/8ba30ef0ea.js" crossorigin="anonymous"></script>
+{% endblock %}
